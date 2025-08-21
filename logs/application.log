@@ -1,0 +1,502 @@
+2025-08-21 22:31:08 [main] INFO  c.e.d.DealerVehicleApiApplication - Starting DealerVehicleApiApplication using Java 23.0.1 with PID 16628 (C:\New folder (4)\New folder (4)\target\classes started by ayush in C:\New folder (4)\New folder (4))
+2025-08-21 22:31:08 [main] DEBUG c.e.d.DealerVehicleApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-08-21 22:31:08 [main] INFO  c.e.d.DealerVehicleApiApplication - The following 1 profile is active: "postgres"
+2025-08-21 22:31:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21 22:31:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2025-08-21 22:31:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-21 22:31:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:31:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-21 22:31:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:31:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3234 ms
+2025-08-21 22:31:12 [main] DEBUG c.e.d.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-08-21 22:31:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21 22:31:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-21 22:31:12 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-21 22:31:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21 22:31:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-21 22:31:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3cf70afa
+2025-08-21 22:31:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-21 22:31:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21 22:31:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21 22:31:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:31:16 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21 22:31:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21 22:31:18 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-08-21 22:31:19 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-21 22:31:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-21 22:31:20 [main] INFO  c.e.d.DealerVehicleApiApplication - Started DealerVehicleApiApplication in 12.738 seconds (process running for 13.915)
+2025-08-21 22:31:49 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:31:49 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-21 22:31:49 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v81/account/transfer
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:31:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:32:57 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token
+2025-08-21 22:32:57 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:32:57 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token
+2025-08-21 22:33:19 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token
+2025-08-21 22:33:19 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:33:19 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token
+2025-08-21 22:33:54 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token
+2025-08-21 22:33:54 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:33:54 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api?timeout=32s
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?timeout=32s
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:35:10 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:36:30 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=demo
+2025-08-21 22:36:30 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:36:30 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=demo
+2025-08-21 22:37:28 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-08-21 22:37:28 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:37:28 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-21 22:37:28 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-21 22:40:51 [main] INFO  c.e.d.DealerVehicleApiApplication - Starting DealerVehicleApiApplication using Java 23.0.1 with PID 23856 (C:\New folder (4)\New folder (4)\target\classes started by ayush in C:\New folder (4)\New folder (4))
+2025-08-21 22:40:51 [main] DEBUG c.e.d.DealerVehicleApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-08-21 22:40:51 [main] INFO  c.e.d.DealerVehicleApiApplication - The following 1 profile is active: "postgres"
+2025-08-21 22:40:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21 22:40:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+2025-08-21 22:40:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-21 22:40:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:40:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-21 22:40:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:40:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3219 ms
+2025-08-21 22:40:55 [main] DEBUG c.e.d.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-08-21 22:40:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21 22:40:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-21 22:40:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-21 22:40:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21 22:40:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-21 22:40:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e05a706
+2025-08-21 22:40:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-21 22:40:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21 22:40:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21 22:40:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:41:00 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21 22:41:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21 22:41:01 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-08-21 22:41:02 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-21 22:41:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-21 22:41:04 [main] INFO  c.e.d.DealerVehicleApiApplication - Started DealerVehicleApiApplication in 13.775 seconds (process running for 15.103)
+2025-08-21 22:41:06 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:41:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-21 22:41:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=demo
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=demo
+2025-08-21 22:41:06 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Name for argument of type [java.lang.String] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.] with root cause
+java.lang.IllegalArgumentException: Name for argument of type [java.lang.String] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:187)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:162)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:108)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.dealervehicle.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?username=demo
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:41:06 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:42:24 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-08-21 22:42:24 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:42:24 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-21 22:42:24 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-21 22:42:35 [main] INFO  c.e.d.DealerVehicleApiApplication - Starting DealerVehicleApiApplication using Java 23.0.1 with PID 20804 (C:\New folder (4)\New folder (4)\target\classes started by ayush in C:\New folder (4)\New folder (4))
+2025-08-21 22:42:35 [main] DEBUG c.e.d.DealerVehicleApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-08-21 22:42:35 [main] INFO  c.e.d.DealerVehicleApiApplication - The following 1 profile is active: "postgres"
+2025-08-21 22:42:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21 22:42:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+2025-08-21 22:42:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-21 22:42:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:42:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-21 22:42:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:42:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3129 ms
+2025-08-21 22:42:38 [main] DEBUG c.e.d.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-08-21 22:42:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21 22:42:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-21 22:42:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-21 22:42:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21 22:42:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-21 22:42:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a6fc1bc
+2025-08-21 22:42:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-21 22:42:40 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21 22:42:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21 22:42:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:42:43 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21 22:42:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21 22:42:44 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-08-21 22:42:45 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-21 22:42:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-21 22:42:47 [main] INFO  c.e.d.DealerVehicleApiApplication - Started DealerVehicleApiApplication in 12.988 seconds (process running for 14.416)
+2025-08-21 22:44:38 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-08-21 22:44:38 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:44:38 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-21 22:44:38 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-21 22:44:48 [main] INFO  c.e.d.DealerVehicleApiApplication - Starting DealerVehicleApiApplication using Java 23.0.1 with PID 22912 (C:\New folder (4)\New folder (4)\target\classes started by ayush in C:\New folder (4)\New folder (4))
+2025-08-21 22:44:48 [main] DEBUG c.e.d.DealerVehicleApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-08-21 22:44:48 [main] INFO  c.e.d.DealerVehicleApiApplication - The following 1 profile is active: "postgres"
+2025-08-21 22:44:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21 22:44:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2025-08-21 22:44:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-21 22:44:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:44:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-21 22:44:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:44:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2906 ms
+2025-08-21 22:44:51 [main] DEBUG c.e.d.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-08-21 22:44:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21 22:44:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-21 22:44:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-21 22:44:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21 22:44:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-21 22:44:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@360a3106
+2025-08-21 22:44:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-21 22:44:52 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21 22:44:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21 22:44:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:44:55 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21 22:44:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21 22:44:57 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-08-21 22:44:58 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-21 22:44:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-21 22:44:59 [main] INFO  c.e.d.DealerVehicleApiApplication - Started DealerVehicleApiApplication in 12.233 seconds (process running for 13.371)
+2025-08-21 22:45:00 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:45:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-21 22:45:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-21 22:45:00 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=demo
+2025-08-21 22:45:00 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:45:00 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=demo
+2025-08-21 22:45:01 [http-nio-8080-exec-2] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Map com.example.dealervehicle.web.AuthController.token(String) with args [demo]
+2025-08-21 22:45:01 [http-nio-8080-exec-2] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Map com.example.dealervehicle.web.AuthController.token(String) with result {token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vIiwiaWF0IjoxNzU1Nzk2NTAxLCJleHAiOjE3NTU4MDAxMDF9.VioWTa0vwmvCugl22Hi9K62IEdfoNTrk0SAXGqohJDM}
+2025-08-21 22:49:27 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api?timeout=32s
+2025-08-21 22:49:27 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:49:27 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:49:28 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?timeout=32s
+2025-08-21 22:49:28 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:49:28 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:49:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s837ms814µs400ns).
+2025-08-21 22:53:29 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/payment/initiate
+2025-08-21 22:53:30 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/payment/initiate
+2025-08-21 22:53:31 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Payment com.example.dealervehicle.web.PaymentController.initiate(PaymentInitiateRequest) with args [com.example.dealervehicle.dto.PaymentInitiateRequest@520c4d97]
+2025-08-21 22:53:31 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Payment com.example.dealervehicle.service.PaymentService.initiate(PaymentInitiateRequest) with args [com.example.dealervehicle.dto.PaymentInitiateRequest@520c4d97]
+2025-08-21 22:53:31 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Dealer com.example.dealervehicle.service.DealerService.get(Long) with args [1]
+2025-08-21 22:53:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        d1_0.id,
+        d1_0.email,
+        d1_0.name,
+        d1_0.subscription_type 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2025-08-21 22:53:31 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Dealer com.example.dealervehicle.service.DealerService.get(Long) with result com.example.dealervehicle.domain.Dealer@5ab8d5c9
+2025-08-21 22:53:32 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        payments
+        (amount, created_at, dealer_id, method, status, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?) 
+    returning id
+2025-08-21 22:53:32 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Payment com.example.dealervehicle.service.PaymentService.initiate(PaymentInitiateRequest) with result com.example.dealervehicle.domain.Payment@641c8d8e
+2025-08-21 22:53:32 [http-nio-8080-exec-7] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Payment com.example.dealervehicle.web.PaymentController.initiate(PaymentInitiateRequest) with result com.example.dealervehicle.domain.Payment@641c8d8e
+2025-08-21 22:53:37 [ForkJoinPool.commonPool-worker-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.amount,
+        p1_0.created_at,
+        p1_0.dealer_id,
+        p1_0.method,
+        p1_0.status,
+        p1_0.updated_at 
+    from
+        payments p1_0 
+    where
+        p1_0.id=?
+2025-08-21 22:53:37 [ForkJoinPool.commonPool-worker-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.amount,
+        p1_0.created_at,
+        p1_0.dealer_id,
+        p1_0.method,
+        p1_0.status,
+        p1_0.updated_at 
+    from
+        payments p1_0 
+    where
+        p1_0.id=?
+2025-08-21 22:53:37 [ForkJoinPool.commonPool-worker-1] DEBUG org.hibernate.SQL - 
+    update
+        payments 
+    set
+        amount=?,
+        created_at=?,
+        dealer_id=?,
+        method=?,
+        status=?,
+        updated_at=? 
+    where
+        id=?
+2025-08-21 22:53:37 [ForkJoinPool.commonPool-worker-1] INFO  c.e.d.service.PaymentService - Payment 4 updated to SUCCESS
+2025-08-21 22:54:25 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=demo
+2025-08-21 22:54:25 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:54:25 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=demo
+2025-08-21 22:54:25 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Map com.example.dealervehicle.web.AuthController.token(String) with args [demo]
+2025-08-21 22:54:25 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Map com.example.dealervehicle.web.AuthController.token(String) with result {token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vIiwiaWF0IjoxNzU1Nzk3MDY1LCJleHAiOjE3NTU4MDA2NjV9.h947eE-1FTqGgrKNNYqcgGKnN3ij-urDc15-g3TKrgQ}
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:54:35 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:54:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:55:18 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 22:55:18 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers
+2025-08-21 22:55:19 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:55:19 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:55:19 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:55:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers/1
+2025-08-21 22:55:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers/1
+2025-08-21 22:55:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:55:50 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:55:50 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:56:07 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers/1
+2025-08-21 22:56:07 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers/1
+2025-08-21 22:56:07 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:56:07 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:56:07 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:56:56 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=demo
+2025-08-21 22:56:56 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:56:56 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=demo
+2025-08-21 22:56:56 [http-nio-8080-exec-4] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Map com.example.dealervehicle.web.AuthController.token(String) with args [demo]
+2025-08-21 22:56:56 [http-nio-8080-exec-4] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Map com.example.dealervehicle.web.AuthController.token(String) with result {token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vIiwiaWF0IjoxNzU1Nzk3MjE2LCJleHAiOjE3NTU4MDA4MTZ9.1u45t03ApyyL94R0maML7VomR5EJrcqyQxA_sF4XufE}
+2025-08-21 22:57:24 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/vehicles
+2025-08-21 22:57:24 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/vehicles
+2025-08-21 22:57:24 [http-nio-8080-exec-5] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.web.VehicleController.list() with args []
+2025-08-21 22:57:24 [http-nio-8080-exec-5] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.service.VehicleService.list() with args []
+2025-08-21 22:57:24 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        v1_0.id,
+        v1_0.dealer_id,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status 
+    from
+        vehicles v1_0
+2025-08-21 22:57:24 [http-nio-8080-exec-5] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.service.VehicleService.list() with result [com.example.dealervehicle.domain.Vehicle@65b9ea99, com.example.dealervehicle.domain.Vehicle@410326c0, com.example.dealervehicle.domain.Vehicle@329c94f, com.example.dealervehicle.domain.Vehicle@27b8a2f1, com.example.dealervehicle.domain.Vehicle@d7f69bd, com.example.dealervehicle.domain.Vehicle@55927bf4, com.example.dealervehicle.domain.Vehicle@183cb3b8, com.example.dealervehicle.domain.Vehicle@7a713564]
+2025-08-21 22:57:24 [http-nio-8080-exec-5] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.web.VehicleController.list() with result [com.example.dealervehicle.domain.Vehicle@65b9ea99, com.example.dealervehicle.domain.Vehicle@410326c0, com.example.dealervehicle.domain.Vehicle@329c94f, com.example.dealervehicle.domain.Vehicle@27b8a2f1, com.example.dealervehicle.domain.Vehicle@d7f69bd, com.example.dealervehicle.domain.Vehicle@55927bf4, com.example.dealervehicle.domain.Vehicle@183cb3b8, com.example.dealervehicle.domain.Vehicle@7a713564]
+2025-08-21 22:57:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 22:57:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers
+2025-08-21 22:57:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 22:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:58:21 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/dealers
+2025-08-21 22:58:21 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/dealers
+2025-08-21 22:58:21 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-08-21 22:58:21 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 22:58:21 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 22:58:34 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/vehicles
+2025-08-21 22:58:34 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/vehicles
+2025-08-21 22:58:34 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.web.VehicleController.list() with args []
+2025-08-21 22:58:34 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.service.VehicleService.list() with args []
+2025-08-21 22:58:34 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        v1_0.id,
+        v1_0.dealer_id,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status 
+    from
+        vehicles v1_0
+2025-08-21 22:58:34 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.service.VehicleService.list() with result [com.example.dealervehicle.domain.Vehicle@5582e3eb, com.example.dealervehicle.domain.Vehicle@3877c7b5, com.example.dealervehicle.domain.Vehicle@f66204c, com.example.dealervehicle.domain.Vehicle@1b640a28, com.example.dealervehicle.domain.Vehicle@59bb3f14, com.example.dealervehicle.domain.Vehicle@5f7701f9, com.example.dealervehicle.domain.Vehicle@612d2e1b, com.example.dealervehicle.domain.Vehicle@5aa35d5c]
+2025-08-21 22:58:34 [http-nio-8080-exec-8] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.web.VehicleController.list() with result [com.example.dealervehicle.domain.Vehicle@5582e3eb, com.example.dealervehicle.domain.Vehicle@3877c7b5, com.example.dealervehicle.domain.Vehicle@f66204c, com.example.dealervehicle.domain.Vehicle@1b640a28, com.example.dealervehicle.domain.Vehicle@59bb3f14, com.example.dealervehicle.domain.Vehicle@5f7701f9, com.example.dealervehicle.domain.Vehicle@612d2e1b, com.example.dealervehicle.domain.Vehicle@5aa35d5c]
+2025-08-21 22:58:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/vehicles
+2025-08-21 22:58:35 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/vehicles
+2025-08-21 22:58:35 [http-nio-8080-exec-9] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.web.VehicleController.list() with args []
+2025-08-21 22:58:35 [http-nio-8080-exec-9] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.service.VehicleService.list() with args []
+2025-08-21 22:58:35 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        v1_0.id,
+        v1_0.dealer_id,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status 
+    from
+        vehicles v1_0
+2025-08-21 22:58:35 [http-nio-8080-exec-9] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.service.VehicleService.list() with result [com.example.dealervehicle.domain.Vehicle@28db6e7d, com.example.dealervehicle.domain.Vehicle@4592380c, com.example.dealervehicle.domain.Vehicle@61863e91, com.example.dealervehicle.domain.Vehicle@129251ea, com.example.dealervehicle.domain.Vehicle@61496d43, com.example.dealervehicle.domain.Vehicle@35cf7b3e, com.example.dealervehicle.domain.Vehicle@656db9a0, com.example.dealervehicle.domain.Vehicle@6570b9e6]
+2025-08-21 22:58:35 [http-nio-8080-exec-9] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.web.VehicleController.list() with result [com.example.dealervehicle.domain.Vehicle@28db6e7d, com.example.dealervehicle.domain.Vehicle@4592380c, com.example.dealervehicle.domain.Vehicle@61863e91, com.example.dealervehicle.domain.Vehicle@129251ea, com.example.dealervehicle.domain.Vehicle@61496d43, com.example.dealervehicle.domain.Vehicle@35cf7b3e, com.example.dealervehicle.domain.Vehicle@656db9a0, com.example.dealervehicle.domain.Vehicle@6570b9e6]
+2025-08-21 22:58:54 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-08-21 22:58:54 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 22:58:54 [RMI TCP Connection(17)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-21 22:58:54 [RMI TCP Connection(17)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-21 23:00:29 [main] INFO  c.e.d.DealerVehicleApiApplication - Starting DealerVehicleApiApplication using Java 23.0.1 with PID 18100 (C:\New folder (4)\New folder (4)\target\classes started by ayush in C:\New folder (4)\New folder (4))
+2025-08-21 23:00:29 [main] DEBUG c.e.d.DealerVehicleApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-08-21 23:00:29 [main] INFO  c.e.d.DealerVehicleApiApplication - The following 1 profile is active: "postgres"
+2025-08-21 23:00:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21 23:00:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
+2025-08-21 23:00:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-21 23:00:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 23:00:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-21 23:00:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 23:00:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2773 ms
+2025-08-21 23:00:32 [main] DEBUG c.e.d.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-08-21 23:00:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21 23:00:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-21 23:00:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-21 23:00:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21 23:00:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-21 23:00:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50e1f3fc
+2025-08-21 23:00:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-21 23:00:33 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21 23:00:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21 23:00:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21 23:00:36 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21 23:00:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21 23:00:37 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-08-21 23:00:38 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-21 23:00:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-21 23:00:39 [main] INFO  c.e.d.DealerVehicleApiApplication - Started DealerVehicleApiApplication in 11.42 seconds (process running for 12.511)
+2025-08-21 23:00:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 23:00:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-21 23:00:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-21 23:00:48 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/token?username=Premium%20Auto%20Dealers
+2025-08-21 23:00:48 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 23:00:48 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/token?username=Premium%20Auto%20Dealers
+2025-08-21 23:00:48 [http-nio-8080-exec-1] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering Map com.example.dealervehicle.web.AuthController.token(String) with args [Premium Auto Dealers]
+2025-08-21 23:00:48 [http-nio-8080-exec-1] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting Map com.example.dealervehicle.web.AuthController.token(String) with result {token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQcmVtaXVtIEF1dG8gRGVhbGVycyIsImlhdCI6MTc1NTc5NzQ0OCwiZXhwIjoxNzU1ODAxMDQ4fQ.ouV0TMFoasZsOEPGMb93g3vWI38O7RDtqDqasJotgPU}
+2025-08-21 23:01:15 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 23:01:15 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers
+2025-08-21 23:01:16 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 23:01:16 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 23:01:16 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 23:01:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/dealers
+2025-08-21 23:01:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/dealers
+2025-08-21 23:01:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-21 23:01:17 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-21 23:01:17 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-21 23:04:20 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/vehicles/premium
+2025-08-21 23:04:20 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/vehicles/premium
+2025-08-21 23:04:20 [http-nio-8080-exec-6] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.web.VehicleController.listForPremiumDealers() with args []
+2025-08-21 23:04:20 [http-nio-8080-exec-6] INFO  c.e.dealervehicle.aop.LoggingAspect - Entering List com.example.dealervehicle.service.VehicleService.listForPremiumDealers() with args []
+2025-08-21 23:04:20 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        v1_0.id,
+        v1_0.dealer_id,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status 
+    from
+        vehicles v1_0 
+    join
+        dealers d1_0 
+            on d1_0.id=v1_0.dealer_id 
+    where
+        d1_0.subscription_type='PREMIUM'
+2025-08-21 23:04:20 [http-nio-8080-exec-6] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.service.VehicleService.listForPremiumDealers() with result [com.example.dealervehicle.domain.Vehicle@1a8f024d, com.example.dealervehicle.domain.Vehicle@258e3ac2, com.example.dealervehicle.domain.Vehicle@22b67bb0, com.example.dealervehicle.domain.Vehicle@7131ea79, com.example.dealervehicle.domain.Vehicle@18e8dd2]
+2025-08-21 23:04:20 [http-nio-8080-exec-6] INFO  c.e.dealervehicle.aop.LoggingAspect - Exiting List com.example.dealervehicle.web.VehicleController.listForPremiumDealers() with result [com.example.dealervehicle.domain.Vehicle@1a8f024d, com.example.dealervehicle.domain.Vehicle@258e3ac2, com.example.dealervehicle.domain.Vehicle@22b67bb0, com.example.dealervehicle.domain.Vehicle@7131ea79, com.example.dealervehicle.domain.Vehicle@18e8dd2]
